@@ -1,18 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"bytes"
-	"embed"
 	"encoding/json"
-	"errors"
 	"fmt"
-	"io"
 	"log"
 	"math/rand"
-	"net"
 	"regexp"
-	"runtime"
 	"strings"
 	"time"
 )
