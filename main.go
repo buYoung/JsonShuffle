@@ -50,7 +50,7 @@ func MakeRandomMap() map[string]interface{} {
 	rng := NewUniqueRand(2*10)
 	rng2 := NewUniqueRand(2*10000000000)
 	for i:=0; i<10; i++{
-		result[fmt.Sprintf("junkdata%v", rng.Int())] = rng2.Int() ^ i
+		result[fmt.Sprintf("junkdata%d", rng.Int())] = rng2.Int() ^ i
 	}
 	return result
 }
