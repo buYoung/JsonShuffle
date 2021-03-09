@@ -82,8 +82,8 @@ func jsonShuffleObject2(data []byte) string {
 	if bytes.ContainsRune(data,'{') ||bytes.ContainsRune(data,'}') {
 		sb := strings.Builder{}
 		sb.WriteString("{")
-		remove1 := strings.Replace(str,"{","",0)
-		remove2 := strings.Replace(str,"{","",len(remove1))
+		remove1 := strings.Replace(str,"{","",-1)
+		remove2 := strings.Replace(remove1,"}","",len(remove1))
 		splits := strings.Split(remove2, ",")
 		rand.Shuffle(len(splits), func(i, j int) {
 			splits[i], splits[j] = splits[j], splits[i]
