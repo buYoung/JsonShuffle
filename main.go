@@ -152,7 +152,7 @@ func jsonShuffleObject6(data []byte) string {
 	if bytes.ContainsRune(data,'{') || bytes.ContainsRune(data,'}') {
 		sb := strings.Builder{}
 		sb.WriteString("{")
-		rune1 := bytes.Runes(data)
+		rune1 := string(data)
 		rune1 = rune1[1:len(rune1)-1]
 		splits := strings.Split(string(rune1), ",")
 		rand.Shuffle(len(splits), func(i, j int) {
