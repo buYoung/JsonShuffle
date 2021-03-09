@@ -21,3 +21,8 @@
 * 2021/03/09 10:53:04 4번방식  1.7672294s (RegExp Replace)
 * 2021/03/09 10:53:04 5번방식  610.8187ms (rune array cut)
 * 2021/03/09 10:53:04 6번방식  113.6091ms (char array cut)
+
+
+### ETC
+main.go에있는 UniqueRand는 Stack Overflow를 참조했습니다. 
+코드가 너무 이상하면 저를위해 태클을 부탁드립니다! :D
